@@ -1,0 +1,24 @@
+
+# core
+pandas
+numpy
+scikit-learn
+matplotlib
+plotly
+ta
+yfinance
+python-dotenv
+PyYAML
+altair
+
+# deep learning
+torch
+
+# tracking
+mlflow
+
+# app
+streamlit
+
+# optional
+pandas-datareader

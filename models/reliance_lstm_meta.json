@@ -1,0 +1,21 @@
+{
+  "lookback": 60,
+  "hidden_size": 64,
+  "num_layers": 1,
+  "feature_cols": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "rsi",
+    "macd",
+    "ema_10",
+    "ema_20",
+    "bb_high",
+    "bb_low",
+    "dow",
+    "dom",
+    "is_month_end"
+  ]
+}

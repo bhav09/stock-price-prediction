@@ -1,0 +1,14 @@
+artifact_uri: /Users/bhavishya/VSC Projects/stock-price-prediction/notebooks/mlruns/923029525408413579/621b03b8cf874260ba30773cbc57a306/artifacts
+end_time: 1761909970068
+entry_point_name: ''
+experiment_id: '923029525408413579'
+lifecycle_stage: active
+run_id: 621b03b8cf874260ba30773cbc57a306
+run_name: smoke_test
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761909970060
+status: 3
+tags: []
+user_id: bhavishya

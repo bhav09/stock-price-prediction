@@ -1,0 +1,47 @@
+
+seed: 42
+symbol: "AAPL"
+interval: "1d"
+start_date: "2014-01-01"
+end_date: null  # null = today
+
+target:
+  type: "log_return"     # options: close, return, log_return
+  horizon: 1             # predict t+1
+  use_close: true
+
+split:
+  train_end: "2020-12-31"
+  val_end: "2022-12-31"
+
+features:
+  lookback: 60
+  indicators:
+    - "rsi"
+    - "macd"
+    - "ema_10"
+    - "ema_20"
+    - "bollinger"
+  calendar:
+    - "dow"
+    - "dom"
+    - "is_month_end"
+
+scaling:
+  type: "standard"       # options: standard, minmax, robust
+
+training:
+  framework: "tensorflow"
+  batch_size: 64
+  epochs: 30
+  learning_rate: 0.001
+  early_stopping_patience: 5
+
+tuning:
+  max_trials: 15
+  executions_per_trial: 1
+
+backtest:
+  fees_bps: 1.0
+  threshold: 0.0
+  position_size: 1.0
